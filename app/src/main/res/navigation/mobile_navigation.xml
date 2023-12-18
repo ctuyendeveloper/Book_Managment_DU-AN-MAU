@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_qlphieumuon">
+
+    <fragment
+        android:id="@+id/nav_qlphieumuon"
+        android:name="com.example.duanmauf_asm.fragment.fragment_phieumuon"
+        android:label="@string/title_phieumuon"
+        tools:layout="@layout/fragment_phieumuon" />
+
+    <fragment
+        android:id="@+id/nav_qlloaisach"
+        android:name="com.example.duanmauf_asm.fragment.fragment_loaisach"
+        android:label="@string/title_loaisach"
+        tools:layout="@layout/fragment_loaisach" />
+
+    <fragment
+        android:id="@+id/nav_qlsach"
+        android:name="com.example.duanmauf_asm.fragment.fragment_sach"
+        android:label="@string/title_sach"
+        tools:layout="@layout/fragment_sach" />
+    <fragment
+        android:id="@+id/nav_qlthanhvien"
+        android:name="com.example.duanmauf_asm.fragment.fragment_thanhvien"
+        android:label="@string/title_thanhvien"
+        tools:layout="@layout/fragment_thanhvien" />
+    <fragment
+        android:id="@+id/nav_sachnhieunhat"
+        android:name="com.example.duanmauf_asm.fragment.fragment_thongkeSTop10"
+        android:label="@string/title_top10Sach"
+        tools:layout="@layout/fragment_thanhvien" />
+    <fragment
+        android:id="@+id/nav_doanhthu"
+        android:name="com.example.duanmauf_asm.fragment.fragment_doanhthu"
+        android:label="@string/title_doanhthu"
+        tools:layout="@layout/fragment_thanhvien" />
+    <fragment
+        android:id="@+id/nav_doimatkhau"
+        android:name="com.example.duanmauf_asm.fragment.fragment_doimatkhau"
+        android:label="@string/title_doimatkhau"
+        tools:layout="@layout/fragment_thanhvien" />
+    <fragment
+        android:id="@+id/nav_dangxuat"
+        android:name="com.example.duanmauf_asm.fragment.fragment_thoat"
+        android:label="@string/title_thanhvien"
+        tools:layout="@layout/fragment_thanhvien" />
+    <activity
+        android:id="@+id/nav_test"
+        android:name="com.example.duanmauf_asm.testactivity"
+        android:label="test"
+        tools:layout="@layout/activity_testactivity"/>
+</navigation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/background_itemtv"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            android:src="@drawable/as" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/tvTenTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="Tên Thành Viên"/>
+
+        <TextView
+            android:id="@+id/tvNamSinhTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Năm Sinh"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tvMaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã Thành Viên"
+            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/btnEditTV"
+                android:layout_width="120dp"
+                android:text="Sửa Thông Tin"
+                android:textAlignment="center"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnXoaTV"
+                android:layout_width="120dp"
+                android:text="Xóa Thành Viên"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
